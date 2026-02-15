@@ -1,4 +1,4 @@
-# Olá, Me chamo Arthur!
+# Olá, Eu sou o Arthur!
 
 <a href="mailto:arhspe.contato@gmail.com">
   <img src="https://img.shields.io/badge/arhspe.contato@gmail.com-4F8F73?style=flat&logo=gmail&logoColor=white" alt="Email">
