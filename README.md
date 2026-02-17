@@ -1,4 +1,6 @@
 ## Hi There! 👋
+<p><em>Support Analyst at <a href="https://www.sonner.com.br/">Sonner Sistemas</a> </em> 
+<p><em>Systems Development Technician, graduated from <a href="https://www.cps.sp.gov.br/">Centro Paula Souza </a> </em> 🎓
 
 <table>
   <tr>
