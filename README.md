@@ -1,24 +1,40 @@
-```python
-from dataclasses import dataclass
-from typing import List
+```sql
+CREATE TABLE profile (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    username TEXT NOT NULL,
+    education TEXT NOT NULL,
+    focus TEXT NOT NULL
+);
 
-@dataclass
-class Profile:
-    name: str
-    role: str
-    education: str
-    skills: List[str]
-    focus: str
+CREATE TABLE stack (
+    id SERIAL PRIMARY KEY,
+    profile_id INTEGER REFERENCES profile(id),
+    technology TEXT NOT NULL
+);
 
-arthur = Profile(
-    name="arthur pereira",
-    role="systems development technician & IT support analyst",
-    education="technical degree from centro paula souza",
-    skills=["python", "pandas", "postgres", "mysql"],
-    focus="turning data and systems into structured understanding"
-)
+INSERT INTO profile (name, username, education, focus)
+VALUES (
+    'arthur pereira',
+    'arhspe',
+    'technical degree in systems development',
+    'solving real-world problems through code, data, and well-structured systems'
+);
 
-print(f"{arthur.name} – {arthur.role}")
-print(f"Education: {arthur.education}")
-print(f"Focus: {arthur.focus}")
+INSERT INTO stack (profile_id, technology)
+VALUES
+    (1, 'python'),
+    (1, 'postgres'),
+    (1, 'mysql');
+
+SELECT
+    p.name,
+    p.username,
+    p.education,
+    STRING_AGG(s.technology, ', ') AS stack,
+    p.focus
+FROM profile p
+JOIN stack s ON s.profile_id = p.id
+GROUP BY p.name, p.username, p.education, p.focus;
+
 ```
