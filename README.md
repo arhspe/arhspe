@@ -7,7 +7,7 @@ WITH developer AS (
         'ADS at Centro Paula Souza' AS education
 ),
 stack AS (
-    SELECT UNNEST(ARRAY['C', 'py', 'postgres']) AS technology
+    SELECT UNNEST(ARRAY['C', 'python', 'postgres']) AS technology
 ),
 interests AS (
     SELECT UNNEST(ARRAY['databases', 'backend', 'data']) AS interest
