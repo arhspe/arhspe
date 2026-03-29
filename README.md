@@ -1,19 +1,14 @@
-```sql
-WITH developer AS (
-    SELECT
-        'Arthur Pereira' AS name,
-        'arhspe' AS username,
-        'São Paulo, Brazil' AS location,
-        'ADS at Centro Paula Souza' AS education
-),
-stack AS (
-    SELECT UNNEST(ARRAY['C', 'python', 'postgres']) AS technology
-),
-interests AS (
-    SELECT UNNEST(ARRAY['databases', 'backend', 'data']) AS interest
-)
-SELECT *
-FROM developer
-JOIN stack ON TRUE
-JOIN interests ON TRUE;
-```
+# Arthur 
+
+`Low-level & Data Developer` 🌱
+
+[![Gmail](https://img.shields.io/badge/arhspe.dev@gmail.com-4CAF50?logo=gmail&logoColor=white)](mailto:arhspe.dev@gmail.com)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.com/users/1487860971228762182)
+
+Olá! Me chamo Arthur da Silva Pereira, tenho 19 anos e sou radicado no interior de São Paulo. Atualmente, curso Análise e Desenvolvimento de Sistemas na Fatec Mário Robertson de Sylos Filho. 
+
+Possuo profundo interesse em compreender a arquitetura computacional e o funcionamento de sistemas em seus níveis mais fundamentais. Dedico meus estudos ao **Low-level Development**, visando o domínio da interação direta com o hardware e a otimização de performance, bem como à área de **Data Science & Engineering**, com foco na extração de valor e inteligência a partir de grandes volumes de dados. 
+
+Busco constantemente desafios que integrem a precisão do baixo nível à capacidade analítica do processamento de dados em larga escala.
+
+
